@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FINAL PROYECT 2023-2</string>
+
+    <string-array name="user_types">
+        <item>Postulante</item>
+        <item>Empresa</item>
+    </string-array>
+
+</resources>
