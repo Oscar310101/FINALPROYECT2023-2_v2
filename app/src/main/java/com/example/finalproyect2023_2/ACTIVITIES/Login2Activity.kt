@@ -25,6 +25,7 @@ class Login2Activity : AppCompatActivity() {
 
         //----------------------
         buttonLogin = findViewById(R.id.buttonLogin)
+        val btnRegister = findViewById<Button>(R.id.btnRegister)
         editTextEmail = findViewById(R.id.editTextEmail)
         editTextPassword = findViewById(R.id.editTextPassword)
         spinnerUserType = findViewById(R.id.spinnerUserType)
@@ -98,6 +99,9 @@ class Login2Activity : AppCompatActivity() {
                         }
                 }
             }
+        }
+        btnRegister.setOnClickListener{
+            startActivity(Intent(this,DetailRegisterActivity::class.java))
         }
     }
 

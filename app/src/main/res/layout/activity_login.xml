@@ -49,7 +49,18 @@
         android:id="@+id/buttonLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/spinnerUserType"
-        android:text="Iniciar Sesión"/>
+        android:layout_below="@+id/spinnerUserType"
+        android:layout_marginTop="80dp"
+        android:text="Iniciar Sesión" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="335dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/buttonLogin"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginRight="50dp"
+        android:text="REGISTRARSE" />
 
 </RelativeLayout>

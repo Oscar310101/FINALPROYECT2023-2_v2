@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ACTIVITIES.RegisterEmpresaActivity">
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Registro Empresa"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtOrganizacion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:textColor="#009688" />
+
+    <EditText
+        android:id="@+id/txtOrganizacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="39dp"
+        android:ems="10"
+        android:hint="Organización"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/txtRazonSocial"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <EditText
+        android:id="@+id/txtRazonSocial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="33dp"
+        android:autofillHints="Razon Social"
+        android:ems="10"
+        android:hint="Razón Social"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/txtTelefonoEmpresa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView8"
+        app:layout_constraintTop_toBottomOf="@+id/txtOrganizacion" />
+
+    <EditText
+        android:id="@+id/txtTelefonoEmpresa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="33dp"
+        android:autofillHints="Talefono"
+        android:ems="10"
+        android:hint="Telefono"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView8"
+        app:layout_constraintTop_toBottomOf="@+id/txtRazonSocial" />
+
+    <EditText
+        android:id="@+id/txtEmailEmpresa"
+        android:layout_width="302dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="25dp"
+        android:ems="10"
+        android:hint="Gmail"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/txtPasswordEmpresa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <EditText
+        android:id="@+id/txtPasswordEmpresa"
+        android:layout_width="302dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="45dp"
+        android:autofillHints="Password"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmailEmpresa" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="109dp"
+        android:layout_marginBottom="26dp"
+        android:fontFamily="sans-serif-black"
+        android:text="*Gmail --> empresa.com"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtEmailEmpresa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTelefonoEmpresa"
+        tools:textColor="#3F51B5" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout10"
+        android:layout_width="164dp"
+        android:layout_height="116dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="21dp"
+        android:layout_weight="0.5"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/linearLayout10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPasswordEmpresa">
+
+        <!-- Tercera imagen en la segunda fila y primera columna -->
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="158dp"
+            android:layout_height="78dp"
+            android:layout_gravity="center"
+            android:background="@drawable/white_background">
+
+            <ImageView
+                android:id="@+id/Volver2"
+                android:layout_width="160dp"
+                android:layout_height="78dp"
+                android:scaleType="centerInside"
+
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/ic_baseline_login_24" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/txtCancelar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif-black"
+            android:text="CANCELAR"
+
+            android:textAlignment="center"
+            android:textColor="#00BCD4"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout11"
+        android:layout_width="164dp"
+        android:layout_height="116dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="21dp"
+        android:layout_weight="0.5"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout10"
+        app:layout_constraintTop_toBottomOf="@+id/txtPasswordEmpresa">
+
+        <!-- Tercera imagen en la segunda fila y primera columna -->
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="158dp"
+            android:layout_height="78dp"
+            android:layout_gravity="center"
+            android:background="@drawable/white_background">
+
+            <ImageView
+                android:id="@+id/Postular2"
+                android:layout_width="160dp"
+                android:layout_height="78dp"
+                android:scaleType="centerInside"
+
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0"
+                app:srcCompat="@drawable/baseline_add_to_home_screen_24" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/txtPostular1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif-black"
+            android:text="POSTULAR"
+
+            android:textAlignment="center"
+            android:textColor="#00BCD4"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="141dp"
+        android:layout_height="176dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
+        app:layout_constraintEnd_toStartOf="@+id/txtTelefonoEmpresa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:srcCompat="@drawable/baseline_supervised_user_circle_24" />
+</androidx.constraintlayout.widget.ConstraintLayout>

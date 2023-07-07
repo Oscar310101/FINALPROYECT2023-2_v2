@@ -14,6 +14,15 @@
         android:theme="@style/Theme.FINALPROYECT20232"
         tools:targetApi="31">
         <activity
+            android:name=".ACTIVITIES.RegisterEmpresaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ACTIVITIES.DetailRegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ACTIVITIES.RegisterActivity"
+            android:exported="false" />
+        <activity
             android:name=".ACTIVITIES.EmpresaActivity"
             android:exported="false" />
         <activity
