@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ACTIVITIES.DetailRegisterActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout10"
+        android:layout_width="205dp"
+        android:layout_height="174dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginBottom="42dp"
+        android:layout_weight="0.5"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDEmpresa">
+
+        <!-- Tercera imagen en la segunda fila y primera columna -->
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="148dp"
+            android:layout_height="123dp"
+            android:layout_gravity="center"
+            android:background="@drawable/white_background">
+
+            <ImageView
+                android:id="@+id/Cancelar"
+                android:layout_width="148dp"
+                android:layout_height="122dp"
+                android:scaleType="centerInside"
+
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/ic_baseline_login_24" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/txtPostular1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif-thin"
+            android:text="Cancelar"
+
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnDVoluntario"
+        android:layout_width="300dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="32dp"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif-black"
+        android:text="VOLUNTARIO"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnDEmpresa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+    <Button
+        android:id="@+id/btnDEmpresa"
+        android:layout_width="300dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="41dp"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif-black"
+        android:text="EMPRESA"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDVoluntario" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="330dp"
+        android:layout_height="193dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnDVoluntario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo"
+        tools:srcCompat="@drawable/logoo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
