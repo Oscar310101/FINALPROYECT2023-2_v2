@@ -35,20 +35,20 @@
         android:ems="10"
         android:hint="Organización"
         android:inputType="text"
-        app:layout_constraintBottom_toTopOf="@+id/txtRazonSocial"
+        app:layout_constraintBottom_toTopOf="@+id/txtRUC"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView8"
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
     <EditText
-        android:id="@+id/txtRazonSocial"
+        android:id="@+id/txtRUC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
         android:layout_marginEnd="33dp"
         android:autofillHints="Razon Social"
         android:ems="10"
-        android:hint="Razón Social"
+        android:hint="RUC"
         android:inputType="text"
         app:layout_constraintBottom_toTopOf="@+id/txtTelefonoEmpresa"
         app:layout_constraintEnd_toEndOf="parent"
@@ -69,7 +69,7 @@
         app:layout_constraintBottom_toTopOf="@+id/textView11"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView8"
-        app:layout_constraintTop_toBottomOf="@+id/txtRazonSocial" />
+        app:layout_constraintTop_toBottomOf="@+id/txtRUC" />
 
     <EditText
         android:id="@+id/txtEmailEmpresa"
@@ -91,12 +91,12 @@
         android:layout_width="302dp"
         android:layout_height="56dp"
         android:layout_marginStart="64dp"
-        android:layout_marginTop="25dp"
         android:layout_marginEnd="45dp"
         android:autofillHints="Password"
         android:ems="10"
         android:hint="Password"
         android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtEmailEmpresa" />
@@ -118,117 +118,6 @@
         app:layout_constraintTop_toBottomOf="@+id/txtTelefonoEmpresa"
         tools:textColor="#3F51B5" />
 
-    <LinearLayout
-        android:id="@+id/linearLayout10"
-        android:layout_width="164dp"
-        android:layout_height="116dp"
-        android:layout_marginStart="34dp"
-        android:layout_marginTop="21dp"
-        android:layout_marginEnd="25dp"
-        android:layout_marginBottom="21dp"
-        android:layout_weight="0.5"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/linearLayout10"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtPasswordEmpresa">
-
-        <!-- Tercera imagen en la segunda fila y primera columna -->
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="158dp"
-            android:layout_height="78dp"
-            android:layout_gravity="center"
-            android:background="@drawable/white_background">
-
-            <ImageView
-                android:id="@+id/Volver2"
-                android:layout_width="160dp"
-                android:layout_height="78dp"
-                android:scaleType="centerInside"
-
-
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0"
-                app:srcCompat="@drawable/ic_baseline_login_24" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <TextView
-            android:id="@+id/txtCancelar1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="8dp"
-            android:fontFamily="sans-serif-black"
-            android:text="CANCELAR"
-
-            android:textAlignment="center"
-            android:textColor="#00BCD4"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout11"
-        android:layout_width="164dp"
-        android:layout_height="116dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="21dp"
-        android:layout_marginEnd="21dp"
-        android:layout_marginBottom="21dp"
-        android:layout_weight="0.5"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/linearLayout10"
-        app:layout_constraintTop_toBottomOf="@+id/txtPasswordEmpresa">
-
-        <!-- Tercera imagen en la segunda fila y primera columna -->
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="158dp"
-            android:layout_height="78dp"
-            android:layout_gravity="center"
-            android:background="@drawable/white_background">
-
-            <ImageView
-                android:id="@+id/Postular2"
-                android:layout_width="160dp"
-                android:layout_height="78dp"
-                android:scaleType="centerInside"
-
-
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="1.0"
-                app:srcCompat="@drawable/baseline_add_to_home_screen_24" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <TextView
-            android:id="@+id/txtPostular1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="8dp"
-            android:fontFamily="sans-serif-black"
-            android:text="POSTULAR"
-
-            android:textAlignment="center"
-            android:textColor="#00BCD4"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
-    </LinearLayout>
-
     <ImageView
         android:id="@+id/imageView8"
         android:layout_width="141dp"
@@ -242,4 +131,108 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView10"
         app:srcCompat="@drawable/baseline_supervised_user_circle_24" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="164dp"
+        android:layout_height="116dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPasswordEmpresa">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="29dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="31dp"
+                android:layout_marginBottom="2dp"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:text="CANCELAR"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Cancelar2"
+                tools:textColor="#00BCD4" />
+
+            <ImageView
+                android:id="@+id/Cancelar2"
+                android:layout_width="160dp"
+                android:layout_height="78dp"
+                android:scaleType="center"
+                app:layout_constraintBottom_toTopOf="@+id/textView7"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_baseline_login_24"
+                tools:layout_constraintVertical_bias="1.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="164dp"
+        android:layout_height="116dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/txtPasswordEmpresa">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="29dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="31dp"
+                android:layout_marginBottom="2dp"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:text="POSTULAR"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Postular2"
+                tools:textColor="#00BCD4" />
+
+            <ImageView
+                android:id="@+id/Postular2"
+                android:layout_width="160dp"
+                android:layout_height="78dp"
+                android:scaleType="center"
+                app:layout_constraintBottom_toTopOf="@+id/textView12"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/baseline_add_to_home_screen_24" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

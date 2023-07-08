@@ -30,7 +30,7 @@
             android:background="@drawable/white_background">
 
             <ImageView
-                android:id="@+id/Volver2"
+                android:id="@+id/Volver1"
                 android:layout_width="160dp"
                 android:layout_height="78dp"
                 android:scaleType="centerInside"
@@ -83,7 +83,7 @@
             android:background="@drawable/white_background">
 
             <ImageView
-                android:id="@+id/Postular2"
+                android:id="@+id/Postular1"
                 android:layout_width="160dp"
                 android:layout_height="78dp"
                 android:scaleType="centerInside"
@@ -217,6 +217,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/txtVoluntario"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:srcCompat="@drawable/ic_baseline_verified_user_24"
         tools:src="@drawable/ic_baseline_verified_user_24" />
 
     <TextView

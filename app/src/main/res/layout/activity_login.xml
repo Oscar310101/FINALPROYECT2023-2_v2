@@ -1,66 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
-     tools:context=".ACTIVITIES.Login2Activity"
-   >
+    android:backgroundTint="#FFC107"
+    android:padding="0dp"
+    tools:context=".ACTIVITIES.Login2Activity">
 
-    <TextView
-        android:id="@+id/textViewTitle"
-        android:layout_width="match_parent"
-        android:layout_marginTop="50dp"
-        android:layout_height="wrap_content"
-        android:text="Inicio de Sesión"
-        android:textSize="24sp"
-        android:gravity="center"
-        android:layout_marginBottom="24dp"/>
 
     <EditText
         android:id="@+id/editTextEmail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:layout_marginTop="100dp"
+        android:layout_width="356dp"
+        android:layout_height="61dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="5dp"
         android:hint="Correo electrónico"
         android:inputType="textEmailAddress" />
 
     <EditText
         android:id="@+id/editTextPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:hint="Contraseña"
-        android:inputType="textPassword"
+        android:layout_width="359dp"
+        android:layout_height="64dp"
         android:layout_below="@id/editTextEmail"
-        android:layout_marginBottom="16dp"/>
-
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Contraseña"
+        android:inputType="textPassword" />
 
     <Spinner
         android:id="@+id/spinnerUserType"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="339dp"
+        android:layout_height="59dp"
         android:layout_below="@id/editTextPassword"
-        android:layout_marginBottom="16dp" />
-
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="50dp" />
 
     <Button
         android:id="@+id/buttonLogin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="213dp"
+        android:layout_height="60dp"
         android:layout_below="@+id/spinnerUserType"
-        android:layout_marginTop="80dp"
-        android:text="Iniciar Sesión" />
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="50dp"
+        android:background="#FFC107"
+        android:backgroundTint="#FF9800"
+        android:fontFamily="sans-serif-black"
+        android:text="Iniciar Sesión"
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/btnRegister"
-        android:layout_width="335dp"
-        android:layout_height="50dp"
+        android:layout_width="213dp"
+        android:layout_height="69dp"
         android:layout_below="@+id/buttonLogin"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="74dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp"
         android:layout_marginRight="50dp"
-        android:text="REGISTRARSE" />
+        android:backgroundTint="#FF9800"
+        android:fontFamily="sans-serif-black"
+        android:text="REGISTRARSE"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="235dp"
+        android:layout_height="184dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="100dp"
+        app:srcCompat="@drawable/volunt"
+        tools:srcCompat="@drawable/volunt" />
 
 </RelativeLayout>

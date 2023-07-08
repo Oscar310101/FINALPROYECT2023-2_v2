@@ -1,8 +1,8 @@
 <resources>
-    <string name="app_name">FINAL PROYECT 2023-2</string>
+    <string name="app_name">VoluntAPP</string>
 
     <string-array name="user_types">
-        <item>Postulante</item>
+        <item>Voluntario</item>
         <item>Empresa</item>
     </string-array>
 

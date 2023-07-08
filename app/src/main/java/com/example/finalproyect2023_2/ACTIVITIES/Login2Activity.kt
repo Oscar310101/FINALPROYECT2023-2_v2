@@ -106,16 +106,45 @@ class Login2Activity : AppCompatActivity() {
     }
 
     private fun redirectUser(userType: String) {
-        if (userType == "Postulante") {
+        if (userType == "Voluntario") {
             // Redirigir al usuario a la actividad de postulante
-            val intent = Intent(this, JobOffersActivity::class.java)
-            startActivity(intent)
-            finish()
+           // val intent = Intent(this, JobOffersActivity::class.java)
+           // startActivity(intent)
+           // finish()
+            val email = editTextEmail.text.toString().trim()
+            val domain = email.substring(email.indexOf('@') + 1)
+            if (domain == "voluntario.com") {
+                // Redirigir al usuario a la actividad de voluntario si el correo termina en 'voluntario.com'
+                val intent = Intent(this, JobOffersActivity::class.java)
+                startActivity(intent)
+                finish()
+            } else {
+                Toast.makeText(
+                    this,
+                    "Usuario no válido para tipo de voluntario",
+                    Toast.LENGTH_SHORT
+                ).show()
+            }
+
         } else if (userType == "Empresa") {
             // Redirigir al usuario a la actividad de empresa
-            val intent = Intent(this, EmpresaActivity::class.java)
-            startActivity(intent)
-            finish()
+            //val intent = Intent(this, EmpresaActivity::class.java)
+            //startActivity(intent)
+           // finish()
+            val email = editTextEmail.text.toString().trim()
+            val domain = email.substring(email.indexOf('@') + 1)
+            if (domain == "empresa.com") {
+                // Redirigir al usuario a la actividad de empresa si el correo termina en 'empresa.com'
+                val intent = Intent(this, EmpresaActivity::class.java)
+                startActivity(intent)
+                finish()
+            } else {
+                Toast.makeText(
+                    this,
+                    "Usuario no válido para tipo de empresa",
+                    Toast.LENGTH_SHORT
+                ).show()
+            }
         }
     }
 }
